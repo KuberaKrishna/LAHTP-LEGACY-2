@@ -1,0 +1,291 @@
+/* Company Font */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+/* General Font */
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    color: lch(0% 0 0);
+    background-color: lch(100% 0.01 296.81);
+}
+::-moz-selection {
+    background-color: lch(100% 0.01 296.81);;;
+    color: lch(0% 0 0);;
+}
+a{
+    text-decoration: none;
+    color: lch(100% 0.01 296.81);;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-color: lch(11.76% 0 296.81);
+    color: lch(100% 0.01 296.81);;
+    font-family: 'Electrolize', sans-serif;
+}
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.puff-in-center {
+	-webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+@-webkit-keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/* HEADER */
+nav{
+    padding: 17px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lch(6.32% 0 296.81);
+}
+.company-name{
+    font-family: "Jersey 10", sans-serif;
+    letter-spacing: 3px;
+    font-size: 35px;
+    animation-duration: 4s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+}
+@keyframes blink {
+    50%{
+        text-shadow: 2px 2px 20px  lch(100% 0.01 296.81 / 0.502);
+    }
+}
+.mid-section{
+    width: 666px;
+}
+.mid-section form{
+    display: flex;
+}
+.mid-section input[type="text"]{
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lch(100% 0.01 296.81);
+    color: lch(100% 0.01 296.81);
+    font-family: 'Electrolize', sans-serif;
+    background-color: lch(11.76% 0 296.81);
+}
+.mid-section input::placeholder{
+    color: lch(100% 0.01 296.81);;
+    letter-spacing: 1px;
+}
+.mid-section button{
+    font-family: 'Electrolize', sans-serif;
+    cursor: pointer;
+    margin-left: -1px;
+    padding: 0 10px;
+    border: 1px solid lch(100% 0.01 296.81);;
+    background-color: lch(11.76% 0 296.81);;
+    color: lch(100% 0.01 296.81);;
+}
+.access{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.access .login{
+    border: 1px solid lch(100% 0.01 296.81);;
+    padding: 4px 10px;
+}
+.access .login:hover{
+    background-color: lch(100% 0.01 296.81);;
+    color: lch(0% 0 0);;
+}
+.access a, .mid-section button{
+    transition: all .3s ease;
+}
+.mid-section button:hover{
+    color: lch(74.05% 0.01 296.81);
+}
+
+/* MAIN */
+main{
+    margin-top: 80px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.poster-img{
+    width: 1000px;
+    height: 555px;
+    object-fit: cover;
+}
+main h2{
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+main .carousel{
+    display: flex;
+    overflow-x: auto;
+}
+main .carousel::-webkit-scrollbar{
+    display: none;
+}
+main .group{
+    display: flex;
+    gap: 2rem;
+    animation-duration: 150s;
+    animation-name : spin;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    padding-right: 2rem;
+}
+@keyframes spin{
+    from {translate: 0;}
+    to   {translate: -100%;}
+}
+main .poster{
+    flex: 0 0 5em;
+    position: relative;
+}
+main .posterdetails{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: lch(0% 0 0 / 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    opacity: 0;    
+    transition: all .3s ease;
+}
+main  .poster:hover .posterdetails{
+    opacity: 1;
+}
+
+/* PHP  */
+.php-postercontainer{
+    margin-top: 100px;
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: 747px 500px;
+    column-gap: 10em;
+}
+.postername{
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+.php-posterimg{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.results{
+    margin-top: 40px;
+    text-align: center;;
+ }
+ .error-msg{
+    margin-top: 40px;
+    text-align: center;
+ }
+ .error-msg::after{
+    content: " 😕";
+ }
+.php-posterdetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.php-postercontainer ul .btn{
+    display: inline-block;
+    padding: 14px 20px;
+    background-color: lch(100% 0.01 296.81);;
+    color: lch(0% 0 0);;
+    transition: all .4s ease;
+}
+.php-postercontainer ul .btn:hover{
+    background-color: lch(0% 0 0);;
+    color: lch(100% 0.01 296.81);;
+    box-shadow: 0px 0px 8px 1px lch(100% 0.01 296.81);
+}
+
+/* FOOTER */
+
+footer{
+    padding: 10px 20px;
+    margin-top: 140px;
+    background-color: lch(0% 0 0);;
+    color: lch(100% 0.01 296.81);;
+    letter-spacing: 1px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   
+}
+footer .company-name{
+    place-self: end center;
+}
+footer a:hover{
+    color: lch(100% 0.01 296.81);
+}
+.email{
+    margin-top: 13px;
+}
+section .links{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+section .email{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+footer .otherlinks{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    font-size: 13px;
+    margin-top: 69px;
+}
+.otherlinks a span:hover{
+    text-decoration: underline;
+}
+footer .otherlinks ul{
+    display: flex;
+    gap: 5px;
+}
