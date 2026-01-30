@@ -8,6 +8,22 @@ DROP DATABASE IF EXISTS `Poster_DB`;
 CREATE DATABASE `Poster_DB`;
 USE `Poster_DB`;
 
+DROP TABLE IF EXISTS `DP_Users`;
+CREATE TABLE `DP_Users` (
+  `Username` varchar(256) NOT NULL,
+  `Password` varchar(1024) NOT NULL,
+  `EmailAddress` varchar(256) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO `DP_Users` (`Username`, `Password`, `EmailAddress`) VALUES
+('admin',	'f865b53623b121fd34ee5426c792e5c33af8c227',	'admin-dp@gmail.com'),
+('John Abraham',	'7afd2900f75778c8836b4f46a39b4669',	'johnab@gmail.com'),
+('Mhd bin Salman',	'2ba30c84218592d4dece3bb092e6656a7b0df17e',	'moosa@gmail.com'),
+('Ban Ladder',	'36d8bb53bb46e4b9fd7ad798d44bf15e',	'iloveamerica@gmail.com'),
+('dev-dp',	'32069097830d66063f333cd0b9d86de9892464d2',	'dev-dp@gmail.com'),
+('Cactus Jack',	'9ef27ee9273cd5876b51b5b5cc4b515e967da3ef',	'cactusjack912@gmail.com'),
+('Osama Binden',	'49377bdb7453cb4b493c1a7baed77586',	'bindenOsama@gmail.com');
+
 DROP TABLE IF EXISTS `Posters_Table`;
 CREATE TABLE `Posters_Table` (
   `PosterID` tinyint NOT NULL AUTO_INCREMENT,
