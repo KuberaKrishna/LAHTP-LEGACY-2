@@ -15,9 +15,10 @@ if(is_dir("$_SERVER[DOCUMENT_ROOT]/../configuration/") === FALSE){
         file_put_contents($configFilePath, $configFiles);
         $_config = file_get_contents($configFilePath);
 } else {
+    $configFiles = file_get_contents("configuration/posterconfig.json");
+    file_put_contents($configFilePath, $configFiles);
     $_config = file_get_contents($configFilePath);
 }
-
  function getConfig($key, $def=null){
     global $_config;
     $Array = json_decode($_config, true);

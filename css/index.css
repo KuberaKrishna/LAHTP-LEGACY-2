@@ -14,19 +14,19 @@
     background-color: lch(100% 0.01 296.81);
 }
 ::-moz-selection {
-    background-color: lch(100% 0.01 296.81);;;
-    color: lch(0% 0 0);;
+    background-color: lch(100% 0.01 296.81);
+    color: lch(0% 0 0);
 }
 a{
     text-decoration: none;
-    color: lch(100% 0.01 296.81);;
+    color: lch(100% 0.01 296.81);
 }
 ul{
     list-style: none;
 }
 body{
     background-color: lch(11.76% 0 296.81);
-    color: lch(100% 0.01 296.81);;
+    color: lch(100% 0.01 296.81);
     font-family: 'Electrolize', sans-serif;
 }
 .container{
@@ -107,7 +107,7 @@ nav{
     background-color: lch(11.76% 0 296.81);
 }
 .mid-section input::placeholder{
-    color: lch(100% 0.01 296.81);;
+    color: lch(100% 0.01 296.81);
     letter-spacing: 1px;
 }
 .mid-section button{
@@ -115,9 +115,9 @@ nav{
     cursor: pointer;
     margin-left: -1px;
     padding: 0 10px;
-    border: 1px solid lch(100% 0.01 296.81);;
-    background-color: lch(11.76% 0 296.81);;
-    color: lch(100% 0.01 296.81);;
+    border: 1px solid lch(100% 0.01 296.81);
+    background-color: lch(11.76% 0 296.81);
+    color: lch(100% 0.01 296.81);
 }
 .access{
     display: flex;
@@ -125,12 +125,12 @@ nav{
     gap: 20px;
 }
 .access .login{
-    border: 1px solid lch(100% 0.01 296.81);;
+    border: 1px solid lch(100% 0.01 296.81);
     padding: 4px 10px;
 }
 .access .login:hover{
-    background-color: lch(100% 0.01 296.81);;
-    color: lch(0% 0 0);;
+    background-color: lch(100% 0.01 296.81);
+    color: lch(0% 0 0);
 }
 .access a, .mid-section button{
     transition: all .3s ease;
@@ -218,7 +218,7 @@ main  .poster:hover .posterdetails{
 }
 .results{
     margin-top: 40px;
-    text-align: center;;
+    text-align: center;
  }
  .error-msg{
     margin-top: 40px;
@@ -235,13 +235,13 @@ main  .poster:hover .posterdetails{
 .php-postercontainer ul .btn{
     display: inline-block;
     padding: 14px 20px;
-    background-color: lch(100% 0.01 296.81);;
-    color: lch(0% 0 0);;
+    background-color: lch(100% 0.01 296.81);
+    color: lch(0% 0 0);
     transition: all .4s ease;
 }
 .php-postercontainer ul .btn:hover{
-    background-color: lch(0% 0 0);;
-    color: lch(100% 0.01 296.81);;
+    background-color: lch(0% 0 0);
+    color: lch(100% 0.01 296.81);
     box-shadow: 0px 0px 8px 1px lch(100% 0.01 296.81);
 }
 
@@ -250,8 +250,8 @@ main  .poster:hover .posterdetails{
 footer{
     padding: 10px 20px;
     margin-top: 140px;
-    background-color: lch(0% 0 0);;
-    color: lch(100% 0.01 296.81);;
+    background-color: lch(0% 0 0);
+    color: lch(100% 0.01 296.81);
     letter-spacing: 1px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);   
