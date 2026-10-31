@@ -53,3 +53,5 @@
 --batch \
 --dump
     - from this got all the values of a particular database and table.
+## Results:
+    - For this assignment, I scored 84%.
