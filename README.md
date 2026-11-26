@@ -1,8 +1,8 @@
 # <center>PRESENTING MY LAHTP LEGACY ASSIGNMENT - 2 SQL INJECTION</center>
 ## EDUCATIONAL PURPOSES ONLY
 ## What does this website do?
-* You can buy your favorite posters. Customization options will be added soon. Due to the festival season, coupon codes will be provided based on your purchases.
-* You can find posters exclusively in the carousel—many surprise posters are still to come!
+* You can buy your favorite posters. Customization options will be added soon. During the festival season, we'll provide coupon codes based on your purchases.
+* Find posters exclusively in the carousel—many surprise posters are still to come!
 ## Recommended Way to Clone
 * `git clone https://github.com/KuberaKrishna/LAHTP-LEGACY-2.git SQLi` — don’t change the default name ('SQLi'); otherwise, it may not work properly.
 ## Read this before executing on Linux:
@@ -16,7 +16,7 @@
 * Place the downloaded .php file in the htdocs folder and run it in your browser.
 * Change the MySQL root password in XAMPP using the Shell:
  - `mysql -u root` (the default password might be either empty or ‘root’). Change the password if this doesn’t work.
- - `ALTER USER 'root'@'localhost' IDENTIFIED BY 'root';`. -- for example :)
+ - `ALTER USER 'root'@'localhost' IDENTIFIED BY 'root';` -- for example :)
 * To create a user in Adminer, use `sql/adminer-user.sql`
 * To create a database in Adminer, use `sql/adminer-sql-windows.sql`
 ## SQL Injection
@@ -42,7 +42,7 @@
 --level=5 \
 --risk=3 \
 --batch
-    - from the above command, got all the database and table names.
+     - From the above command, I got all the database and table names.
 * python3 sqlmap.py \
 -u "http://localhost/SQLi/index.php?PosterName=*" \
 -D Poster_DB \
@@ -52,6 +52,6 @@
 --risk=3 \
 --batch \
 --dump
-    - from this got all the values of a particular database and table.
+      - From this, I got all the values of a particular database and table.
 ## Results:
     - For this assignment, I scored 84%.
